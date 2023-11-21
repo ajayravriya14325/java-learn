@@ -6,16 +6,13 @@ class Hello {
   {
     //Assignment Operators
     int a = 7;
-    //int b = 5;
+    int b = 5;
 
-    //a = a + 2;
-    a += 2;
-    //a -= 2;
-    //a *= 2;
-    //a /= 2;
-    //a %= 2;
+    a++; //increment
+    b--; //decrement
 
     System.out.println(a);
+    System.out.println(b);
     
   }
 }
