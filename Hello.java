@@ -2,20 +2,22 @@
  * Hello
  */
 class Hello {
-  public static void main(String a[])
+  public static void main(String args[])
   {
-    //primitive data types
-    int num1 = 3;
-    byte by = 127;
-    short sh = 558;
-    long l = 5854l;
+    //Type conversion
+    byte d = 127; //output 127
+    int e = d; //Conversion
 
-    float f = 5.8f;
-    double d = 5.8;
+    int b = 12; //output 12
+    byte c = b; //Conversion
 
-    char c = 'k';
+    int a = 257; //output 1 returning modulus % 
+    byte k = (byte)a; //Emplicity Costing
 
-    boolean b = true;
+    float f =5.6f;//output 5
+    int t = (int)f; //Emplicity Costing 
+
+    System.out.println(t);
     
   }
 }
