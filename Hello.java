@@ -12,10 +12,10 @@ class Hello {
     byte c = b; //Conversion
 
     int a = 257; //output 1 returning modulus % 
-    byte k = (byte)a; //Emplicity Costing
+    byte k = (byte)a; //Implicity Conversion or Costing
 
-    float f =5.6f;//output 5
-    int t = (int)f; //Emplicity Costing 
+    float f =5.6f; //output 5
+    int t = (int)f; //Implicity Conversion or Costing 
 
     System.out.println(t);
     
