@@ -4,20 +4,13 @@
 class Hello {
   public static void main(String args[])
   {
-    //Type conversion
-    byte d = 127; //output 127
-    int e = d; //Conversion
+    //Pramoted conversion
+    byte a = 10;
+    byte b = 30;
 
-    int b = 12; //output 12
-    byte c = b; //Conversion
+    int result = a * b; //type pramotion
 
-    int a = 257; //output 1 returning modulus % 
-    byte k = (byte)a; //Implicity Conversion or Costing
-
-    float f =5.6f; //output 5
-    int t = (int)f; //Implicity Conversion or Costing 
-
-    System.out.println(t);
+    System.out.println(result);
     
   }
 }
