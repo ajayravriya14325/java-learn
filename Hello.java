@@ -8,7 +8,12 @@ class Hello {
     int a = 7;
     //int b = 5;
 
-    int a = a + 2;
+    //a = a + 2;
+    a += 2;
+    //a -= 2;
+    //a *= 2;
+    //a /= 2;
+    //a %= 2;
 
     System.out.println(a);
     
