@@ -1,11 +1,11 @@
 public class Whileloop {
   public static void main(String args[]){
-    int i = 1;
+    int i = 6;
 
-    while (i<=5) {
+    do{
       System.out.println("Hi " + i);
       i++;
-    }
-    System.out.println("Bye " + i);
+    }while (i<=5);
+  
   }
 }
