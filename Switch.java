@@ -4,11 +4,11 @@ public class Switch {
     String day = "Sunday";
     String result = "";
 
-    switch (day) {
-      case "Saturday", "Sunday" -> result = "8 am";
-      case "Monday" -> result = "6 am";
-      default -> result = "7 am";
-    }
+    result = switch (day) {
+      case "Saturday", "Sunday": yield "8 am";
+      case "Monday": yield "6 am";
+      default: yield "7 am";
+    };
 
     System.out.println(result);
   }
