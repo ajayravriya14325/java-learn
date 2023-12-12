@@ -4,14 +4,9 @@ public class Switch {
     String day = "Sunday";
 
     switch (day) {
-      case "Saturday", "Sunday":
-        System.out.println("8 am");
-        break;
-      case "Monday":
-        System.out.println("6 am");
-        break;
-      default:
-        System.out.println("7 am");
+      case "Saturday", "Sunday" -> System.out.println("8 am");
+      case "Monday" -> System.out.println("6 am");
+      default -> System.out.println("7 am");
     }
   }
 }
