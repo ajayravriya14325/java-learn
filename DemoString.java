@@ -1,10 +1,12 @@
 public class DemoString {
   public static void main(String a[]){
-    String name = "Ajay"; // Sortcut most of the this syntax used
-    String name1 = new String("Vijay"); // this is correct becoz String is a class
-    System.out.println(name + " " + name1);
-    System.out.println(name.hashCode());
-    System.out.println(name.charAt(0));
-    System.out.println(name.concat(" and ") + name1);
+    String name = "Ajay";
+    name = name + " Ravriya";
+    System.out.println(name);
+
+    String s1 = "Ajay"; //line no 7 and 8 both are having same string value means both the value refering to one object not two diffrent object
+    String s2 = "Ajay";
+
+    System.out.println(s1 == s2);
   }
 }
