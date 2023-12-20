@@ -3,5 +3,6 @@ public class DemoString {
     String name = "Ajay"; // this is not correct becoz String is a class
     String name1 = new String("Vijay");
     System.out.println(name + " " + name1);
+    System.out.println(name.hashCode());
   }
 }
