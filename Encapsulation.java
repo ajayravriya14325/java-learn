@@ -7,8 +7,16 @@ class Human{
     return age;
   }
 
+  public void setAge(int a){
+    age = a;
+  }
+
   public String getName(){
     return name;
+  }
+
+  public void setName(String n){
+    name = n;
   }
 }
 
@@ -16,8 +24,9 @@ public class Encapsulation {
   public static void main(String a[]){
 
     Human h1 = new Human();
-    //h1.age = 25;
-    //h1.name = "Ajay";
+    //Set private var value via method
+    h1.setAge(20);
+    h1.setName("Ravriya");
 
     //private var we can access via method call outside the class
     System.out.println(h1.getName() + " : " + h1.getAge());
