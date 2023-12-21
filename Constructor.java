@@ -4,10 +4,15 @@ class Human{
   private String name = "Ajay";
 
   //Constructor is special method. it has same name as a class name and its never return anuthing.
-  public Human(){
+  public Human(){ // default constructor
     age = 12;
     name = "John";
     //System.out.println("Its constructor method");
+  }
+
+  public Human(int a,String n){ //Parameterised constructor
+    age = a;
+    name = n;
   }
 
   public int getAge(){
@@ -33,9 +38,10 @@ public class Constructor {
   public static void main(String a[]){
     //when object is created then constructor method is called
     Human h1 = new Human();
-    Human h2 = new Human();
+    Human h2 = new Human(18,"Navin");
 
      System.out.println(h1.getName() + " : " + h1.getAge());
+     System.out.println(h2.getName() + " : " + h2.getAge());
     //Set private var value via method
     h1.setAge(20,h1);
     h1.setName("Ravriya");
