@@ -10,9 +10,9 @@ class Human{
     //System.out.println("Its constructor method");
   }
 
-  public Human(int a,String n){ //Parameterised constructor
-    age = a;
-    name = n;
+  public Human(int age,String name){ //Parameterised constructor
+    this.age = age;
+    this.name = name;
   }
 
   public int getAge(){
