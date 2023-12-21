@@ -1,3 +1,5 @@
+
+//Every class in java by defualt having parent class object mean class A extends Object
 class A{
   public A(){
     super(); //Every constructor having super() method default
