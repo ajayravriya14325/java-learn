@@ -12,7 +12,9 @@ class A{
 
 class B extends A{
   public B(){
-    super(); // it's calling parent class default constructor
+    //super() = calling parent class default constructor
+    //super(5) = calling parent class parameterised constructor
+    super();
     System.out.println("In B");
   }
 
@@ -26,5 +28,6 @@ public class DemoSuper {
   
   public static void main(String a[]){
     B obj = new B(1);
+    B obj2 = new B();
   }
 }
