@@ -1,3 +1,3 @@
 public class Ab {
-  int marks = 100;
+  private int marks = 100;
 }

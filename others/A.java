@@ -1,8 +1,8 @@
 package others;
 
 public class A {
-  //if var is not public we can't access it out side the package
-  public int marks = 50;
+  //private var / method access in same class. Can't even use outside the class
+  private int marks = 50;
 
   public void show(){
     System.out.println("in A show method");
