@@ -19,7 +19,7 @@ class C extends B{
 
 public class DynamicMethod {
   public static void main(String[] args) {
-    //Run time ploymorphism
+    //Run time ploymorphism / Dynamic method dispatch
     A obj = new A();
     obj.show();
 
