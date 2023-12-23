@@ -1,4 +1,4 @@
-package tools;
+package others.tools;
 //Superclass
 public class Calc {
 

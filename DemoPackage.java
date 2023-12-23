@@ -1,7 +1,7 @@
 import java.util.ArrayList;
-//import tools.*; this also works for all(*) file
-import tools.AdvanceCalc;
-import tools.Calc;
+
+import others.tools.AdvanceCalc;
+import others.tools.Calc;
 
 public class DemoPackage {
   public static void main(String[] args) {

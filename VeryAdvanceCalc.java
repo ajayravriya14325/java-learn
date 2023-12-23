@@ -1,4 +1,4 @@
-import tools.AdvanceCalc;
+import others.tools.AdvanceCalc;
 
 public class VeryAdvanceCalc extends AdvanceCalc {
   public double power(int n1,int n2){
