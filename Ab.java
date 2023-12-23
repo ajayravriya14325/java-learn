@@ -1,3 +1,4 @@
 public class Ab {
-  private int marks = 100;
+  //default access modifier access in same package files
+  int marks = 100;
 }
