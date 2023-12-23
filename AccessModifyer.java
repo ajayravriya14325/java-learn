@@ -1,5 +1,12 @@
 import others.A;
 
+//protected var can't access outside the package 
+//but we can access protected var outside the package but it should be accessed in subclass or child class 
+class C extends A{
+  public void abc(){
+    System.out.println(marks);
+  }
+}
 public class AccessModifyer {
   public static void main(String[] args) {
 
