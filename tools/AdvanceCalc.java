@@ -1,3 +1,4 @@
+package tools;
 //Subclass
 public class AdvanceCalc extends Calc {
   public int multi(int n1,int n2){

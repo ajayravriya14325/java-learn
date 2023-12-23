@@ -1,3 +1,4 @@
+package tools;
 //Superclass
 public class Calc {
 
