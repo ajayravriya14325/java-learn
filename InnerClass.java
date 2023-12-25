@@ -5,8 +5,8 @@ class A{
   public void show(){
     System.out.println("In show");
   }
-
-  class B{
+  //static keyword used only for inner class
+  static class B{
 
     public void config(){
       System.out.println("In config");
@@ -21,8 +21,8 @@ public class InnerClass {
     A obj = new A();
     obj.show();
 
-    //inner class object creation
-    A.B obj1 = obj.new B();
+    //static inner class object creation
+    A.B obj1 = new A.B();
     obj1.config();
   }
 }
