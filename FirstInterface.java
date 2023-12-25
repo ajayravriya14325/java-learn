@@ -12,7 +12,11 @@ interface X{
   void run();
 }
 
-class B implements A,X{
+interface Y extends X {
+
+}
+
+class B implements A,Y{
 
   public void show(){
     System.out.println("in show");
@@ -33,9 +37,11 @@ public class FirstInterface {
   public static void main(String[] args) {
     A obj;
     obj = new B();
-    X obj1 = new B();
+
     obj.show();
     obj.config();
+
+    X obj1 = new B();
     obj1.run();
 
     System.out.println("Age : "+A.age+ " Area : "+A.area);
