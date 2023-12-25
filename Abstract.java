@@ -12,11 +12,14 @@ abstract class Car {
   }
 }
 
-class WagonR extends Car{
+abstract class WagonR extends Car{
   //abstract method is decleared then definition also needed
   public void drive(){
     System.out.println("Driving...");
   }
+}
+
+class UpdatedWagonR extends WagonR{
 
   public void fly(){
     System.out.println("Fly...");
@@ -27,7 +30,7 @@ class WagonR extends Car{
 public class Abstract {
   public static void main(String[] args) {
 
-    Car obj = new WagonR();
+    Car obj = new UpdatedWagonR();
     obj.drive();
     obj.playMusic();
     obj.fly();
