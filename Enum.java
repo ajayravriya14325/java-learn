@@ -8,8 +8,10 @@ public class Enum {
   public static void main(String[] args) {
     
     //accessing enum class object
-    Status s = Status.Success;
+    Status[] values = Status.values();
 
-    System.out.println(s);
+    for(Status s : values){
+      System.out.println(s);
+    }
   }
 }
