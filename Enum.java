@@ -8,10 +8,16 @@ public class Enum {
   public static void main(String[] args) {
     
     //accessing enum class object
-    Status[] values = Status.values();
+    Status s = Status.Running;
 
-    for(Status s : values){
-      System.out.println(s);
+    if(s == Status.Running){
+      System.out.println("All Good");
+    }else if (s == Status.Failed) {
+      System.out.println("Try again");
+    }else if(s == Status.Pending){
+      System.out.println("Please wait");
+    }else{
+      System.out.println("Done");
     }
   }
 }
