@@ -1,10 +1,15 @@
 enum Laptop{
-  Macbook(2000), XPS(1800), Surface(1500), Thinkpad(1200);
+  Macbook(2000), XPS(1800), Surface, Thinkpad(1200);
 
   private int price;
 
+  private Laptop() {
+    price = 500;
+  }
+
   private Laptop(int price) {
     this.price = price;
+    System.out.println("in Laptop "+ this.name());
   }
 
   public int getPrice() {
