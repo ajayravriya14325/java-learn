@@ -1,15 +1,16 @@
 
 //@FunctionalInterface
 interface A{
-  void show(int i);
+  int add(int i,int j);
 }
 
 public class LamdaExpression {
   public static void main(String[] args) {
 
-    A obj = (i) -> { //Lamda Expression
-        System.out.println("in Show"+ i);
-      };
-    obj.show(5);
+    A obj = (i,j) -> i+j;
+    int result = obj.add(5,6);
+
+    System.out.println(result);
+    
   }
 }
