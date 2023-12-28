@@ -12,5 +12,7 @@ public class ReaderScanner {
 
     int num = Integer.parseInt(bf.readLine());
     System.out.println(num);
+
+    bf.close();
   }
 }
