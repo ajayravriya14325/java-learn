@@ -1,16 +1,23 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class TryWithFinally {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws NumberFormatException, IOException {
     
-    int i = 0;
-    int j = 0;
-
+    int nums = 0;
+    BufferedReader br = null;
     try{
-      j = 18/i;
-    }catch(Exception e){
-      System.out.println("Thats the default output "+ e);
-    }finally{ //finally block excute in both case try as well as catch
-      System.out.println("Bye");
+      System.out.println("Enter a number");
+      br = new BufferedReader(new InputStreamReader(System.in));
+      nums = Integer.parseInt(br.readLine());
+
+      System.out.println(nums);
+
+    }
+    finally{ //finally block excute in both case try as well as catch
+      br.close(); //finally is used to close the resource file,network & database connection, input
     }
   }
   
