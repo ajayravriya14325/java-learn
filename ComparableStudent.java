@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+//if you give power itself to campare class itself we can use Comparable
 class Student implements Comparable<Student>{
   int age;
   String name;

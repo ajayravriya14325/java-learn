@@ -22,7 +22,7 @@ class Student{
 
 public class ComparatorStudent {
   public static void main(String[] args) {
-
+    //if you want to sepecify which logic you want to sort the element use Comparator
     Comparator<Student> com = new Comparator<Student>() {
       public int compare(Student i, Student j) {
         if(i.age > j.age){
