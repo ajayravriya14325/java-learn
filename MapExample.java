@@ -3,7 +3,8 @@ import java.util.Map;
 
 public class MapExample {
   public static void main(String[] args) {
-    
+    //HasTable for synchronized(one thread excute at one time) working with multiple thread at a time
+    //HasMap for working with singal thread at a time
     Map<String,Integer> students = new HashMap<>();
     students.put("Navin", 74);
     students.put("Harish", 60);
