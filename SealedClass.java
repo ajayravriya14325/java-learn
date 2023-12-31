@@ -14,6 +14,13 @@ class D extends B{
 
 }
 
+//Sub interfce of a sealed interface. it can be non-sealed,sealed
+sealed interface X permits Y{
+
+}
+sealed interface Y extends X{
+  
+}
 
 public class SealedClass {
   public static void main(String[] args) {
